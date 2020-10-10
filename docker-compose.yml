@@ -1,7 +1,7 @@
 version: '3.7'
 
 services:
-  db:
+  redis:
     env_file: ./.env 
     image: "redis:${REDIS_IMAGE_VERSION}"
     container_name: ${REDIS_CONTAINER_NAME}
